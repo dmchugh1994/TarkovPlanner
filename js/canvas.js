@@ -56,7 +56,7 @@ if (window.addEventListener) {
             h = img.height;
 
             // calculate the edges of the image, in coordinate space
-            var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
+            var southWest = map.unproject([0, h], map.x() - 1);
             var northEast = map.unproject([w, 0], map.getMaxZoom() - 1);
             var bounds = new L.LatLngBounds(southWest, northEast);
 
