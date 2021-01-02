@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #1e1e1e;
+  font-family: "Belle", "Comic Sans MS", cursive;
+  font-size: 25px;
+  line-height: 27px;
+}
+
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+#map {
+  width: 100%;
+  border: 0;
+}
+
+.leaflet-control-attribution.leaflet-control {
+  display: none;
+}
+
+.map-dark .leaflet-container {
+  background-color: #1e1e1e;
+  background-image: linear-gradient(rgba(150,132,101,.1) 2px,transparent 0),linear-gradient(90deg,rgba(150,132,101,.1) 2px,transparent 0),linear-gradient(rgba(150,132,101,.1) 1px,transparent 0),linear-gradient(90deg,rgba(150,132,101,.1) 1px,transparent 0);
+}
+
+.leaflet-container, .map-dark .leaflet-container {
+  background-size: 100px 100px,100px 100px,20px 20px,20px 20px;
+  background-position: -2px -2px,-2px -2px,-1px -1px,-1px -1px;
+}
+
+#selector {
+  z-index: 99999;
+  margin-top: -30px;
+  margin-left: 5px;
+}
+
+select {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  background-color: #EAEAEA;
+}
